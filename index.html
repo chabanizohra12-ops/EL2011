@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>EL2011</title>
+</head>
+
+<body>
+
+    <h1>تم تهكيرك من طرف الياس ونوغي</h1>
+
+    <p>اكتب الكود للعودة إلى الوضع الطبيعي:</p>
+
+    <input id="code" type="text">
+
+    <button onclick="checkCode()">دخول</button>
+
+    <p id="message"></p>
+
+    <script>
+        function checkCode() {
+            let code = document.getElementById("code").value;
+
+            if (code === "EL2011") {
+                document.body.innerHTML =
+                    "<h1>كل شيء عاد طبيعيًا ✅</h1>";
+            } else {
+                document.getElementById("message").innerText =
+                    "الكود غير صحيح";
+            }
+        }
+    </script>
+
+</body>
+</html>
